@@ -9,7 +9,7 @@ std::map<std::string, std::string> m1_map;
 std::map<std::string, std::string> m2_map;
 std::map<std::string, std::string> m3_map;
 
-void Map(std::ifstream& F1, std::ifstream& F2, std::ifstream& F3)
+void add_to_map(std::ifstream& F1, std::ifstream& F2, std::ifstream& F3)
 {
     std::string word;
     while(F1 >> word)
@@ -44,11 +44,12 @@ int main()
             std::invalid_argument("");
     }
 
-    Map(F1, F2, F3);
-    const int size = 7;
-    char arr[size] = {'?', '.', ':', ';', '!', '`', '*'};
+    add_to_map(F1, F2, F3);
+    const int size = 8;
+    char arr[size] = {'?', '.', ':', ';', '!', '`', '*', '%'};
+    char text[20] = {"1.txt", "2.txt", "3.txt"};
     
-    std::cout << m1_map[str] << " "<< m2_map[str] << " "<< m3_map[str] ;
+    std::cout << m1_map[str] << " " << m2_map[str] << " " << m3_map[str] ;
     for(int i = 0; i < size; ++i)
     {
         str.push_back(arr[i]);
