@@ -47,7 +47,6 @@ int main()
     add_to_map(F1, F2, F3);
     const int size = 8;
     char arr[size] = {'?', '.', ':', ';', '!', '`', '*', '%'};
-    char text[20] = {"1.txt", "2.txt", "3.txt"};
     
     std::cout << m1_map[str] << " " << m2_map[str] << " " << m3_map[str] ;
     for(int i = 0; i < size; ++i)
