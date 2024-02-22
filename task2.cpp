@@ -11,6 +11,7 @@ std::map<std::string, std::string> m3_map;
 
 void add_to_map(std::ifstream& F1, std::ifstream& F2, std::ifstream& F3)
 {
+   // git message
     std::string word;
     while(F1 >> word)
     {
